@@ -71,10 +71,15 @@ Git命令
 ## 新建、切换、合并分支
 
 `git branch XXXX` 创建分支（基于已有的提交）
+
 `git branch -v` 查看所有分支（星号*为当前所在分支）
+
 `git checkout xxx` 切换到xxx分支
+
 `git checkout -b xxx` 创建并切换到xxx分支（两步合成一步）
+
 `git branch -d xxx` 删除某分支
+
 `git merge new_branch` 将新分支合并到当前分支（若有冲突，自行修改文件再重新提交到主干分支中）
 
 
@@ -86,11 +91,18 @@ Git命令
 ## 标签，拉取、推送远程库
 
 `git tag`  显示目前所有标签
+
 `git tag xxx 版本号` 给已知版本号的历史记录添加标签xxx（不能重复）
+
 `git tag -d xxx` 删除标签xxx
+
 `git log 标签名` 查找所给标签名之前的所有历史记录
-`git push 远程仓库名` 推送到远程仓库
-`git pull 远程仓库名` 拉取远程仓库到本地
+
+`git push 远程仓库名 分支名` 推送到远程仓库（第一次push要在push后面加`-u`）
+
+`git pull 远程仓库名 分支名` 拉取远程仓库到本地
+
+
 
  
 
